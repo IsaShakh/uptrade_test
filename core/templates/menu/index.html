@@ -1,0 +1,25 @@
+
+{% load staticfiles %}
+{% load menu_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    {% load menu_tags %}
+</head>
+<body style="background-color: aliceblue">
+    <div class="container">
+        <h1 align="center">Тестовое</h1>
+        <div align="center">
+            {% draw_menu 'Products' %}
+            <br>
+            <br>
+            {% draw_menu 'Courses' %}
+        </div>
+
+    </div>
+
+</body>
+</html>
